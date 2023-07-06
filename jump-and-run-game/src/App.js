@@ -1,20 +1,8 @@
 import React from 'react';
 import { TiHomeOutline } from 'react-icons/ti';
 import { Link } from 'react-router-dom';
+import { enterFullscreen } from './fullscreen';
 
-function enterFullscreen() {
-	const element = document.documentElement;
-
-	if (element.requestFullscreen) {
-	  element.requestFullscreen();
-	} else if (element.mozRequestFullScreen) {
-	  element.mozRequestFullScreen();
-	} else if (element.webkitRequestFullscreen) {
-	  element.webkitRequestFullscreen();
-	} else if (element.msRequestFullscreen) {
-	  element.msRequestFullscreen();
-	}
-  }
 
 const Startpage = () => {
 	return (
